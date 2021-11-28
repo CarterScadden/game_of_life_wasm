@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game Of Life</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(39, 39, 39);
+        display: flex;
+        flex-direction: row;
+      }
+
+      #canvas-container {
+        display: flex;
+        position: relative;
+        flex: 1 1 auto;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #game-of-live-canvas {}
+
+      #gui-controller {
+        flex: 1;
+        width: 300px;
+        flex-direction: column;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <h1>
+        This page contains webassembly and javascript content, please enable javascript in your browser.
+      </h1>
+    </noscript>
+
+    <div id="canvas-container">
+      <canvas id="game-of-live-canvas"></canvas>
+    </div>
+
+    <ul id="gui-controller"></ul>
+
+  </body>
+</html>
